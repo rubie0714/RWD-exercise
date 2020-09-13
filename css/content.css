@@ -1,0 +1,113 @@
+.tab-button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.model {
+    width: 50%;
+
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+  .rwd-table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .rwd-table th, td {
+        border: 1px solid #000000;
+        padding: 2px 4px;
+        text-align: center;
+  }
+
+
+@media screen and (max-width: 767px) {
+    .tab-button{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .model {
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+
+
+    .rwd-table{
+        width: 100%;
+        border:none;
+
+
+    }
+
+
+    .rwd-table tr{
+        border: 1px solid #000000;
+    }
+
+
+    .rwd-table th, td {
+        display: block;
+        border: none;
+        justify-content: start;
+        text-align: left;
+        width: 100%;
+
+    }
+
+
+
+    .rwd-table th:nth-child(1), td:nth-child(1){
+        float: left;
+        width: 50%;
+
+    }
+    .rwd-table th:nth-child(3), td:nth-child(3){
+        display: flex;
+        width: 100%;
+        text-align: left;
+
+    }
+    .rwd-table th:nth-child(4),td:nth-child(4) {
+        float: left;
+        width: 50%;
+
+    }
+  }
