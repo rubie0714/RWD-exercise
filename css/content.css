@@ -1,20 +1,30 @@
-.tab-button{
+/*user模式*/
+.user{
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-.model {
+.user-mode {
+    padding: 20px 0px;
+    border: 1px solid #ccc;
     width: 50%;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
 
 }
-/* Style the tab */
+.user-mode:hover {
+  background-color: #ddd;
+}
+
+/* 股東會資訊tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+
   }
 
-  /* Style the buttons inside the tab */
+
   .tab button {
     background-color: inherit;
     float: left;
@@ -22,92 +32,288 @@
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    font-size: 14px;
+    border-radius: 4px 4px 0px 0px;
+    margin: 5px 5px 0px 5px;
   }
 
-  /* Change background color of buttons on hover */
+
   .tab button:hover {
     background-color: #ddd;
   }
 
-  /* Create an active/current tablink class */
+
   .tab button.active {
     background-color: #ccc;
   }
 
-  /* Style the tab content */
+
   .tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
-    border-top: none;
+    border-radius: 0px 4px 4px 4px;
+    margin: 0px 5px 5px 5px;
+
   }
 
+  /*搜尋*/
+.filter{
+  display: flex;
+  justify-content: start;
+  margin: 20px;
+}
+.search{
+  margin: 10px 30px;
+}
+.search button{
+  background-color: #ddd;
+  padding: 5px;
+  color:black;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.search button:hover{
+  background-color: #ccc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
 
-  .rwd-table {
-    border: 1px solid #000000;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  .rwd-table th, td {
-        border: 1px solid #000000;
-        padding: 2px 4px;
-        text-align: center;
-  }
+/**
+表格
+*/
+.table{
+  display: block;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0px;
+  justify-content: center;
+  text-align: center;
+}
+
+.thead{
+  display: table-header-group;
+  width: 100%;
+}
+
+.tr{
+  display: table-row;
+  width: 100%;
+}
+
+.tbody{
+  display: table-row-group;
+  width: 100%;
+}
+
+.thead li, .tr li{
+  display: table-cell;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width:20vw;
+
+
+}
+
+.thead {
+  text-align: center;
+  font-weight: bold;
+
+}
+.tbody {
+  text-align: center;
+}
+
+.tbody li{
+  text-align: center;
+}
+
+/**
+表格下方按鈕
+*/
+
+.content-footer{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+}
+.container {
+  width: 70%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  float:left;
+  justify-content: center;
+}
+
+.box{
+  width: 31%;
+  margin: 5px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #ddd;
+}
+.more{
+  height:100%;
+  width:30%;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
 
 
 @media screen and (max-width: 767px) {
-    .tab-button{
-        display: block;
-        justify-content: center;
-        text-align: center;
-    }
-    .model {
-        justify-content: center;
-        margin: 20px auto;
-    }
-
-
-
-    .rwd-table{
-        width: 100%;
-        border:none;
-
-
-    }
-
-
-    .rwd-table tr{
-        border: 1px solid #000000;
-    }
-
-
-    .rwd-table th, td {
-        display: block;
-        border: none;
-        justify-content: start;
-        text-align: left;
-        width: 100%;
-
-    }
-
-
-
-    .rwd-table th:nth-child(1), td:nth-child(1){
-        float: left;
-        width: 50%;
-
-    }
-    .rwd-table th:nth-child(3), td:nth-child(3){
-        display: flex;
-        width: 100%;
-        text-align: left;
-
-    }
-    .rwd-table th:nth-child(4),td:nth-child(4) {
-        float: left;
-        width: 50%;
-
-    }
+  .user{
+      display: block;
+      justify-content: center;
+      text-align: center;
   }
+  .user-mode {
+    padding: 20px 0px;
+    width: 100%;
+  }
+
+  .filter{
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+
+  .search span{
+    display:block;
+  }
+
+  .search input{
+    margin-right: 10px;
+  }
+
+  .table{
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    margin: 5vw;
+  }
+
+  .tr li{
+    display: inline-block;
+    width: 100%;
+    border: none;
+  }
+
+
+  .thead li{
+    background: none;
+  }
+  .thead .tr{
+    border:none;
+  }
+  .tbody .tr{
+    display: block;
+    border: #ddd 1px solid;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .table .thead li:nth-child(1){
+      float: left;
+      width:50%;
+      padding:5px 0;
+      text-align: left;
+  }
+
+  .table .thead li:nth-child(2){
+    float: left;
+    width: 50%;
+    padding:5px  0;
+    text-align: left;
+  }
+
+  .table .thead li:nth-child(3){
+      display: flex;
+      width: 100%;
+      text-align: left;
+      padding:5px 0;
+  }
+
+  .table .thead li:nth-child(4){
+    float: left;
+    width:50%;
+    padding:5px 0;
+    text-align: left;
+  }
+
+  .table .thead li:nth-child(5){
+    float: left;
+    width: 50%;
+    padding:5px 0;
+    text-align: left;
+  }
+
+  .table .tbody li:nth-child(1){
+    float: left;
+    width:50%;
+    padding:5px 0;
+    text-align: left;
+  }
+
+  .table .tbody li:nth-child(2){
+    float: left;
+    width:50%;
+    padding:5px 0;
+    text-align: left;
+  }
+
+  .table .tbody li:nth-child(3){
+      display: flex;
+      width: 100%;
+      text-align: left;
+      padding:5px 0;
+  }
+
+  .table .tbody li:nth-child(4){
+    float: left;
+    width:50%;
+    padding:5px 0;
+    text-align: left;
+  }
+
+  .table .tbody li:nth-child(5){
+    padding:5px 0;
+    width:50%;
+    text-align: left;
+  }
+
+  .content-footer{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .more{
+    width: 100%;
+  }
+
+  .box{
+    width: 45%;
+    height: 80px;
+    cursor: pointer;
+
+  }
+}

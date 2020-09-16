@@ -2,128 +2,205 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css\navbar.css">
-    <link rel="stylesheet" href="css\header.css">
-    <link rel="stylesheet" href="css\content.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css\navbar.css">
+  <link rel="stylesheet" href="css\header.css">
+  <link rel="stylesheet" href="css\content.css">
+  <link rel="stylesheet" href="css\footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 
 <body>
-    <nav class="menu">
-        <a id="menubtn" class="toggle-nav" href="#">☰</a>
-        <div class="menuTitle">
-            <div class="menuLogo">
-                <img src="image\logo.png">
-            </div>
-            <div class="menuLogo">
-                <h3>
-                    股東e票通
-                </h3>
-                <p>
-                    股東會電子投票平台
-                </p>
-            </div>
-
-        </div>
-
-        <ul id="menuUl" class="active">
-            <li class="current-active"><a>首頁</a></li>
-            <li><a>關於我們</a></li>
-            <li><a>活動消息</a></li>
-            <li><a>統計專區</a></li>
-            <li><a>Q & A</a></li>
-            <li><a>聯絡我們</a></li>
-            <li><a>登入</a></li>
-        </ul>
-        </div>
-
-
-    </nav>
-    <script src="js\navbar.js"></script>
-
-    <div class="header" style="width: 60vw; margin: 0 auto ; background-color: beige;">
-        <div class="message">
-            <p>活動消息:</p>
-        </div>
-        <div class="button">
-            <div class="role"> 一般股東</div>
-            <div class="role">發行公司- 股務代理機構</div>
-            <div class="role">專業機構法人</div>
-        </div>
-
-    </div>
-    <div class="content" style="width: 60vw; margin: 0 auto ; ">
-        <div class="tab-button">
-            <div class="mode">新手上路</div>
-            <div class="mode">首次使用設定</div>
-        </div>
-
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'information')" id="defaultOpen">股東會資訊</button>
-
-          </div>
-
-          <div id="information" class="tabcontent">
-            <table class="rwd-table">
-                <thead>
-                  <tr>
-                    <th>證劵代號/名稱</th>
-                    <th>股東會日期</th>
-                    <th>股票起訖日期</th>
-                    <th>股務單位</th>
-                    <th>連絡電話</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-td="No">6702 復興航空</td>
-                    <td data-td="Date">106/01/11</td>
-                    <td data-td="Start-End">105/12/27 ~ 106/01/08</td>
-                    <td data-td="Department">群益金鼎證劵</td>
-                    <td data-td="Phone">(02)2703-500</td>
-                  </tr>
-                  <tr>
-                    <td data-td="No">6702 復興航空</td>
-                    <td data-td="Date">106/01/11</td>
-                    <td data-td="Start-End">105/12/27 ~ 106/01/08</td>
-                    <td data-td="Department">群益金鼎證劵</td>
-                    <td data-td="Phone">(02)2703-500</td>
-                  </tr>
-                  <tr>
-                    <td data-td="No">6702 復興航空</td>
-                    <td data-td="Date">106/01/11</td>
-                    <td data-td="Start-End">105/12/27 ~ 106/01/08</td>
-                    <td data-td="Department">群益金鼎證劵</td>
-                    <td data-td="Phone">(02)2703-500</td>
-                  </tr>
-                  <tr>
-                    <td data-td="No">6702 復興航空</td>
-                    <td data-td="Date">106/01/11</td>
-                    <td data-td="Start-End">105/12/27 ~ 106/01/08</td>
-                    <td data-td="Department">群益金鼎證劵</td>
-                    <td data-td="Phone">(02)2703-500</td>
-                  </tr>
-                  <tr>
-                    <td data-td="No">6702 復興航空</td>
-                    <td data-td="Date">106/01/11</td>
-                    <td data-td="Start-End">105/12/27 ~ 106/01/08</td>
-                    <td data-td="Department">群益金鼎證劵</td>
-                    <td data-td="Phone">(02)2703-500</td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
-        <script src="js\tab.js"></script>
+  <nav class="menu">
+    <a id="menubtn" class="toggle-nav" href="#">☰</a>
+    <div class="menuTitle">
+      <div class="menuLogo">
+        <img src="image\logo.png">
+      </div>
+      <div class="menuLogo">
+        <h3>
+          股東e票通
+        </h3>
+        <p>
+          股東會電子投票平台
+        </p>
+      </div>
 
     </div>
 
-    <footer>
+    <ul id="menuUl" class="active">
+      <li class="current-active"><a>首頁</a></li>
+      <li><a>關於我們</a></li>
+      <li><a>活動消息</a></li>
+      <li><a>統計專區</a></li>
+      <li><a>Q & A</a></li>
+      <li><a>聯絡我們</a></li>
+      <li><a>登入</a></li>
+    </ul>
+    </div>
 
-    </footer>
+
+  </nav>
+  <script src="js\navbar.js"></script>
+
+  <div class="header" style="width: 60vw; margin: 0 auto ; ">
+    <div class="message">
+      <p>活動消息:</p>
+    </div>
+    <div class="button">
+      <div class="role">
+        <div class="img">
+        </div>
+            <p>一般股東</p>
+        </div>
+      <div class="role">
+        <div class="img">
+        </div>
+      <div>
+            <span>發行公司</span><br>
+            <span>股務代理機構</span>
+        </div>
+      </div>
+      <div class="role">
+        <div class="img">
+        </div>
+            <p>專業機構法人</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="content" style="width: 60vw; margin: 0 auto ; ">
+    <div class="user">
+      <div class="user-mode">新手上路</div>
+      <div class="user-mode">首次使用設定</div>
+    </div>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'information')" id="defaultOpen">股東會資訊</button>
+
+    </div>
+
+    <div id="information" class="tabcontent">
+     <div class="filter">
+
+      <div class="search">
+        <span>資料排序方式:</span>
+          <input type="text">
+          <button>查詢</button>
+      </div>
+
+      <div class="search">
+        <span>搜尋股東會:</span>
+        <input type="text">
+        <button>查詢</button>
+      </div>
+     </div>
+
+      <ul class="table">
+        <li class="thead">
+          <ol class="tr">
+            <li>證券代號/名稱</li>
+            <li>股東會日期</li>
+            <li>投票起訖日期</li>
+            <li>服務單位</li>
+            <li>連絡電話</li>
+          </ol>
+        </li>
+        <li class="tbody">
+          <ol class="tr">
+            <li>6702 復興航空</li>
+            <li>106/01/11</li>
+            <li>105/12/27 ~ 106/01/08</li>
+            <li>群益金鼎證劵</li>
+            <li>(02)2703-500</li>
+          </ol>
+          <ol class="tr">
+            <li>6702 復興航空</li>
+            <li>106/01/11</li>
+            <li>105/12/27 ~ 106/01/08</li>
+            <li>群益金鼎證劵</li>
+            <li>(02)2703-500</li>
+          </ol>
+          <ol class="tr">
+            <li>6702 復興航空</li>
+            <li>106/01/11</li>
+            <li>105/12/27 ~ 106/01/08</li>
+            <li>群益金鼎證劵</li>
+            <li>(02)2703-500</li>
+          </ol>
+          <ol class="tr">
+            <li>6702 復興航空</li>
+            <li>106/01/11</li>
+            <li>105/12/27 ~ 106/01/08</li>
+            <li>群益金鼎證劵</li>
+            <li>(02)2703-500</li>
+          </ol>
+          <ol class="tr">
+            <li>6702 復興航空</li>
+            <li>106/01/11</li>
+            <li>105/12/27 ~ 106/01/08</li>
+            <li>群益金鼎證劵</li>
+            <li>(02)2703-500</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+    <script src="js\tab.js"></script>
+
+    <div class="content-footer">
+        <div class="container" >
+          <div class="box" id="box1">公開資訊觀測站</div>
+          <div class="box" id="box2">股東會法規查詢</div>
+          <div class="box" id="box3">股務機構查詢</div>
+          <div class="box" id="box1">股東e票通APP安裝</div>
+          <div class="box" id="box2">股東會電子投票專區</div>
+          <div class="box" id="box3">股東e票通抽獎活動</div>
+      </div>
+
+      <div class="more">
+        <div style="display: flex; width: 100%;">
+          <h3 style="width:50%;">相關網站</h3>
+          <p style="width:50%;"><a href="#">more</a></p>
+        </div>
+        <div>
+          <p><a href="#">金融監督管理委員會</a></p>
+          <p><a href="#">台灣證券交易所</a></p>
+          <p><a href="#">台灣期貨交易所</a></p>
+          <p><a href="#">證券櫃台買賣中心</a></p>
+          <p><a href="#">台灣及保結算所</a></p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+      <div class="footer-information">
+        <div class="footer-box" >
+          <p>聯絡我們</p>
+          <p>週一至週五</p>
+          <p>08:00 ~ 20:00 電話: (02)3789-7555</p>
+          <p>08:30 ~ 17:00 電話: (02)2514-1125、 (02)2514-1242</p>
+        </div>
+        <div class="footer-box" >
+          <p>E-Mail:tdoc@tdcc.com.tw</p>
+          <p>台北市復興北路363號11樓</p>
+        </div>
+        <div class="footer-box">
+          <img src="image\logo.png">
+        </div>
+        <div class="footer-box">
+          <img src="image\logo.png">
+        </div>
+
+      </div>
+  </footer>
 
 
 

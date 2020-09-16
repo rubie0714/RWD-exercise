@@ -37,9 +37,16 @@
   line-height: 60px;
 }
 
+
+.menu li:nth-child(1) a{
+  border-left: #EBEBEB solid 1px;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
 .menu a:hover, .menu .current-active a {
   text-decoration: none;
-  color: #337275;
+  color: #ccc;
 }
 
 .toggle-nav {
@@ -52,7 +59,7 @@
       position: relative;
       display: inline-block;
       text-align: center;
-    justify-content: center;
+      justify-content: center;
   }
   .menuTitle{
     text-align: center;
@@ -62,15 +69,19 @@
   }
 
   .toggle-nav {
-      position: absolute;
       left: 4%;
       color:#000;
       text-decoration: none;
       line-height: 40px;
+      text-align: right;
+      float: right;
+      margin-right: 10px;
   }
+
   .menu .menu-logo {
-      position: relative;
       left: 40%;
+      margin-right: 10px;;
+
   }
   .menu .menu-logo a img {
     width: 10%;
@@ -91,8 +102,6 @@
       margin: 10px 0px 10px 0px;
       float: none;
       display: block;
-
-
   }
   .menu a {
       display: block;
@@ -101,6 +110,11 @@
   .menu li a {
     border-right: none;
     text-align: center;
+  }
 
+  .menu li:nth-child(1) a{
+    border-left: none;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 }
